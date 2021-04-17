@@ -1,0 +1,3 @@
+ds	nj	system             	Sec	Obj
+AA	10	full w/ warm-start  	0.018	383.622
+AA	10	full w/o warm-start 	0.072	391.392

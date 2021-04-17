@@ -1,0 +1,134 @@
+
+<<< setup
+
+ds	nj	system             	Sec	Obj
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 69 variables, 268 constraints, 1 phase
+ ! Presolve      : 16 extractables eliminated
+ ! TimeLimit            = 5
+ ! Workers              = 2
+ ! LogPeriod            = 1,000,000
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = Off
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 425.6 (before), 425.6 (after)
+ !  . Memory usage      : 655.6 kB (before), 655.6 kB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         69                 -
+ + New bound is 65.2530
+                        0         69                 -
+ + New bound is 243.882
+ *       369.873      134  0.01s        1      (gap is 34.06%)
+ *       363.109      152  0.01s        1      (gap is 32.83%)
+ *       362.103      599  0.01s        1      (gap is 32.65%)
+         362.103    6,771          3    1            -
+ + New bound is 265.771 (gap is 26.60%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 362.103 (gap is 26.60%)
+ ! Best bound             : 265.771
+ ! Number of branches     : 13,542
+ ! Number of fails        : 6,548
+ ! Total memory usage     : 3.1 MB (2.9 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 5.00s (4.99s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 2,709.5
+ ! ----------------------------------------------------------------------------
+AA	10	partial schedule	5.002	362.103
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 75 variables, 298 constraints, 1 phase
+ ! Presolve      : 18 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 1
+ ! Workers              = 2
+ ! LogPeriod            = 1,000,000
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 268.2 (before), 268.2 (after)
+ !  . Memory usage      : 690.7 kB (before), 690.7 kB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         75                 -
+ + New bound is 65.2530
+                        0         41                 -
+ + New bound is 258.852
+ ! Using temporal relaxation.
+ ! Starting point is incomplete but completion successed.
+ *       383.622        3  0.01s        1      (gap is 32.52%)
+AA	10	full w/ warm-start  	0.018	383.622
+2147483647
+v	i	q	est  	lst  	start  	end
+1	3	15	256000	316000	256000	261084	261000	321000	
+1	5	12	469000	529000	469000	470122	470000	530000	
+1	9	11	28000	88000	32049	61576	57000	117000	
+1	10	12	96000	156000	96000	125520	125000	185000	
+1	1	7	175000	235000	175000	175000	0	0	
+1	2	9	522000	582000	522000	522000	0	0	
+1	4	5	529000	589000	549372	549372	0	0	
+1	6	5	436000	496000	443959	443959	0	0	
+1	7	10	517000	577000	574330	574330	0	0	
+1	8	8	414000	474000	414000	414000	0	0	
+1	11	-7	209000	269000	209240	209240	0	0	
+1	12	-9	562000	622000	562823	562823	0	0	
+1	14	-5	549000	609000	604031	604031	0	0	
+1	16	-5	439000	499000	447651	447651	0	0	
+1	17	-10	545000	605000	602871	602871	0	0	
+1	18	-8	434000	494000	434768	434768	0	0	
+1	21	0	0	1000000	0	0	0	0	
+1	22	0	0	1000000	620060	620060	0	0	
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 85 variables, 298 constraints, 1 phase
+ ! Presolve      : 36 extractables eliminated
+ ! Using starting point solution
+ ! TimeLimit            = 1
+ ! Workers              = 2
+ ! LogPeriod            = 1,000,000
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.05s (0.05s extraction + 0.00s propagation)
+ !  . Log search space  : 387.9 (before), 387.9 (after)
+ !  . Memory usage      : 796.6 kB (before), 796.6 kB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         85                 -
+ + New bound is 65.2530
+                        0         51                 -
+ + New bound is 258.852
+ ! Using temporal relaxation.
+ ! Starting point is incomplete but completion successed.
+ *       391.392       31  0.07s        1      (gap is 33.86%)
+AA	10	full w/o warm-start 	0.072	391.392
+2147483647
+v	i	q	est  	lst  	start  	end
+1	3	15	256000	316000	256000	261084	261000	321000	
+1	5	12	469000	529000	469000	470122	470000	530000	
+1	9	11	28000	88000	32049	61576	57000	117000	
+1	10	12	96000	156000	96000	125520	125000	185000	
+1	1	7	175000	235000	175000	175000	0	0	
+1	2	9	522000	582000	558886	558886	0	0	
+1	4	5	529000	589000	529000	529000	0	0	
+1	6	5	436000	496000	443959	443959	0	0	
+1	7	10	517000	577000	517000	517000	0	0	
+1	8	8	414000	474000	414000	414000	0	0	
+1	11	-7	209000	269000	209240	209240	0	0	
+1	12	-9	562000	622000	599621	599621	0	0	
+1	14	-5	549000	609000	549432	549432	0	0	
+1	16	-5	439000	499000	447651	447651	0	0	
+1	17	-10	545000	605000	548272	548272	0	0	
+1	18	-8	434000	494000	434768	434768	0	0	
+1	21	0	0	1000000	0	0	0	0	
+1	22	0	0	1000000	616831	616831	0	0	
+main returns 0
+
+<<< main
+
+
+<<< done
+
